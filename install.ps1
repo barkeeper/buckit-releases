@@ -1,5 +1,5 @@
 # Installs the latest Buckit on this machine (per-user; no admin rights needed).
-#   irm https://raw.githubusercontent.com/barkeeper/buckit-releases/main/install.ps1 | iex
+#   irm https://buckit.struis.nl | iex   (redirects to this file)
 # Downloads the newest MSI from this repo's latest release, verifies it against the release's
 # checksums.txt, then installs it. Re-running it upgrades an existing install.
 & {

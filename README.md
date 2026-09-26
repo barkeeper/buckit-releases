@@ -13,16 +13,17 @@ needed. Running it again upgrades an existing install.
 **PowerShell**
 
 ```powershell
-irm https://raw.githubusercontent.com/barkeeper/buckit-releases/main/install.ps1 | iex
+irm https://buckit.struis.nl | iex
 ```
 
 **Command Prompt (cmd)**
 
 ```cmd
-powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/barkeeper/buckit-releases/main/install.ps1 | iex"
+powershell -c "irm https://buckit.struis.nl | iex"
 ```
 
-You can read the script first: [`install.ps1`](install.ps1).
+You can read the script first: [`install.ps1`](install.ps1). `buckit.struis.nl` just redirects to it (the
+full URL `https://raw.githubusercontent.com/barkeeper/buckit-releases/main/install.ps1` works too).
 
 ## Manual download
 
