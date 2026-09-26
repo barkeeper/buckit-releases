@@ -1,9 +1,30 @@
 # Buckit — releases
 
-This repository only hosts **Buckit's release downloads**. It contains no source code.
+This repository only hosts **Buckit's release downloads**. It contains none of the app's source code, just
+this README and a small install script.
 Buckit's built-in updater checks the [latest release](../../releases/latest) here.
 
-## Download
+## Install
+
+Paste **one** of these commands into a terminal and press Enter. It downloads the latest release,
+checks it against `checksums.txt`, and installs Buckit for the current user. No admin rights are
+needed. Running it again upgrades an existing install.
+
+**PowerShell**
+
+```powershell
+irm https://raw.githubusercontent.com/barkeeper/buckit-releases/main/install.ps1 | iex
+```
+
+**Command Prompt (cmd)**
+
+```cmd
+powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/barkeeper/buckit-releases/main/install.ps1 | iex"
+```
+
+You can read the script first: [`install.ps1`](install.ps1).
+
+## Manual download
 
 Get the newest version from **[Releases → Latest](../../releases/latest)**:
 
